@@ -1,10 +1,29 @@
 1. CREAT DATABES ujian_Nurul eka;
 
 
-2.CREAT TABLES ujian_nurul eka(
+2.CREATE TABLE `tabel obat` (
+  `kode_obat` varchar(25) NOT NULL,
+  `nama_obat` varchar(50) NOT NULL,
+  `jenis` varchar(50) NOT NULL,
+  `satuan` varchar(50) NOT NULL,
+  `stok` int(20) NOT NULL,
+  `haraga_beli` int(20) NOT NULL,
+  `harga_jual` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-3.
+3.INSERT INTO `tabel obat` (`kode_obat`, `nama_obat`, `jenis`, `satuan`, `stok`, `haraga_beli`, `harga_jual`) VALUES
+('k001', 'allerin 120 cc', 'obat terbatas', 'botol', 50, 20000, 22000),
+('k002', 'bocombion 110 ml', 'obat bebas', 'botol', 10, 15000, 16000),
+('k003', 'bocombion 60 ml', 'obat bebas', 'botol', 5, 8000, 9000),
+('k004', 'betadiene vag plus', 'obat bebas', 'botol', 12, 12000, 13000),
+('k005', 'komix', 'obat bebas', 'lembar', 50, 4500, 5000),
+('k006', 'Diazepam', 'obat keras', 'tablet', 4, 55000, 60000),
+('k007', ' CTM', 'obat bebas', 'tablet', 10, 70000, 75000),
+('k008', 'amoxsillin', 'obat terbatas', 'tablet', 74, 975, 11000),
+('k009', 'antimo', 'obat bebas', 'tablet', 2, 5100, 6000),
+('k010', 'parasetamol', 'obat bebas', 'strips', 100, 3000, 4000),
+('k011', 'paramex', 'obat bebas', 'lembar', 14, 4000, 5000);
 
 
 4.SELECT * FROM `tabel obat`;

@@ -1,0 +1,59 @@
+1. CREAT DATABES ujian_Nurul eka;
+
+
+2.CREAT TABLES ujian_nurul eka(
+
+
+3.
+
+
+4.SELECT * FROM `tabel obat`;
+
+
+5.SELECT * FROM `tabel obat` WHERE jenis = 'obat terbatas';
+
+
+6.SELECT * FROM `tabel obat` WHERE stok > '50'  ORDER BY stok DESC;
+
+
+7.SELECT * FROM `tabel obat` WHERE nama_obat LIKE '%bocombion%';
+
+
+8.SELECT * FROM `tabel obat` WHERE jenis = 'obat bebas';
+
+
+9.UPDATE `tabel obat` SET `stok` = '10' WHERE `tabel obat`.`kode_obat` = 'k007':
+
+
+10.SELECT * FROM `tabel obat` WHERE jenis = 'obat bebas' AND satuan = 'botol';
+
+
+11.SELECT harga_beli, AVG (harga_beli) AS rerata_harga FROM `tb_obat` GROUP BY jenis = 'Obat Terbatas';
+
+
+12.INSERT INTO `tabel obat` (`kode_obat`, `nama_obat`, `jenis`, `satuan`, `stok`, `haraga_beli`, `harga_jual`) VALUES ('k011', 'paramex', 'obat bebas', 'lembar', '14', '4000', '5000');
+
+
+13.SELECT * FROM `tabel obat`
+
+
+14.SELECT jenis, COUNT(jenis) FROM `tabel obat` GROUP BY `stok`;
+
+
+15.DELETE FROM `tb_obat` WHERE kode_obat ='K005';
+    SELECT * FROM `tb_obat`;
+
+
+16.SELECT * FROM `tabel obat` WHERE nama_obat LIKE 'A%';
+
+
+17.SELECT satuan, COUNT(satuan) FROM `tabel obat`;
+
+
+18.SELECT * FROM `tabel obat` WHERE haraga_beli BETWEEN 10000 AND 25000;
+
+
+19.ALTER TABLE tb_obat RENAME tbl_obat;
+
+
+20.SELECT * FROM `tabel obat` WHERE nama_obat LIKE '%mo%' AND stok > '10';
